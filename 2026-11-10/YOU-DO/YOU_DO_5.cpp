@@ -2,11 +2,33 @@
 using namespace std;
 int main()
 {
-    int number;
+    int n,count=0,number=2;
     cout<<"Enter the number : ";
-    cin>>number;
-    for(int index=2;index<=number;index++)
+    cin>>n;
+    while (count<n)
     {
-        if(number%index!=0)
+        int index;
+        for ( index=2;index<=number;index++)
+        {
+            if (number%index==0)
+            {
+                break;
+            }
+        }    
+            
+            if (index==number)
+            {
+                count=count+1;
+            }
+            if (count<n)
+            {
+                number=number+1;
+            }
+            
+            
+        
+        
     }
+    cout<<number;
+    
 }
