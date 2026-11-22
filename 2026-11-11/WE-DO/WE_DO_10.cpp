@@ -2,14 +2,15 @@
 using namespace std;
 int main()
 {
-    int length = 48;
-    int breadth = 18;
-    float area = length*breadth;
-    int value =0;
-
-    cout<<"side of sqaure : "<<"Area of square "<<"Area%i*i"<<"Number of tiles"<<endl;
-    for(int i=1;i<100;i++)
+    int num1,num2,remainder;
+    cin>>num1;
+    cin>>num2;
+    while (num2!=0)
     {
-        cout<<i<<"\t\t"<<i*i<<"\t\t"<<area<<"\t\t"<<int(area)%(i*i)<<"\t\t"<<area/(i*i)<<endl;
+        remainder=num1%num2;
+        num1=num2;
+        num2=remainder;
     }
+     cout<<"Tile side = "<<num1;
+    
 }
